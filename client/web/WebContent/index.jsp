@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Quick EJB</title>
+<title>EJB Client</title>
 </head>
 <body>
-	<h1>Quick EJB</h1>
+	<h2>EJB Client</h2>
 </body>
 </html>
