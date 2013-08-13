@@ -9,6 +9,7 @@ import javax.ejb.Stateless;
 public class UsuarioSession implements 
 							UsuarioSessionRemote, 
 							UsuarioSessionLocal {
+    
     @Override
     public void salvar() {
     	System.out.println("Usuario Salvo com sucesso. ");
