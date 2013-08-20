@@ -27,6 +27,6 @@ public class UsuarioSession implements
 
 	@Override
 	public void relatorio() {
-		System.out.println("Relatórios de usuários.");
+		System.out.println("Relatorios de usuarios.");
 	}
 }

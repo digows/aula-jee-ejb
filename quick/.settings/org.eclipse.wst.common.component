@@ -2,6 +2,6 @@
     <wb-module deploy-name="aula-ejb.quick">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="aula-ejb.quick"/>
+        <property name="context-root" value="ejb-quick.web"/>
     </wb-module>
 </project-modules>
