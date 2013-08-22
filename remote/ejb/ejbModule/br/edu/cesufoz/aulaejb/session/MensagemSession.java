@@ -12,4 +12,11 @@ public class MensagemSession implements MensagemSessionRemote {
 	public String dizerOlaMundo(String nome) {
 		return "Ola Mundo, "+nome;
 	}
+	
+	@Override
+	public Mensagem getMensagem(String conteudo) {
+		final Mensagem mensagem = new Mensagem();
+		mensagem.conteudo = conteudo;
+		return mensagem;
+	}
 }

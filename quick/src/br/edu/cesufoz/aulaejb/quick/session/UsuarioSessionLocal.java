@@ -1,4 +1,4 @@
-package br.edu.cesufoz.aulaejb.quick;
+package br.edu.cesufoz.aulaejb.quick.session;
 
 import javax.ejb.Local;
 
