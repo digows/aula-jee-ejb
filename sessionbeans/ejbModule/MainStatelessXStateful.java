@@ -5,8 +5,10 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
 import br.edu.cesufoz.aulaejb.sessionbeans.IContador;
+import br.edu.cesufoz.aulaejb.sessionbeans.stateful.StatefulSession;
+import br.edu.cesufoz.aulaejb.sessionbeans.stateless.StatelessSession;
 
-public class Main {
+public class MainStatelessXStateful {
 	public static void main(String[] args) throws NamingException {
 		
 		final Properties properties = new Properties();
@@ -35,7 +37,7 @@ public class Main {
         // JBoss AS7 possibilita adicionar nomes customizados.
         final String distinctName = "";
         //Nome da implementacao EJB
-        final String beanName = "StatefulSession";
+        final String beanName = StatefulSession.class.getSimpleName();
         //Nome completo da interface remota
         final String viewClassName = IContador.class.getName();
         final String componentName = "ejb:" + appName + "/" + moduleName + "/" + distinctName + "/" + beanName + "!" + viewClassName+"?stateful";
@@ -68,7 +70,7 @@ public class Main {
 		// JBoss AS7 possibilita adicionar nomes customizados.
 		final String distinctName = "";
 		//Nome da implementacao EJB
-		final String beanName = "StatelessSession";
+		final String beanName = StatelessSession.class.getSimpleName();
 		//Nome completo da interface remota
 		final String viewClassName = IContador.class.getName();
 		final String componentName = "ejb:" + appName + "/" + moduleName + "/" + distinctName + "/" + beanName + "!" + viewClassName;
