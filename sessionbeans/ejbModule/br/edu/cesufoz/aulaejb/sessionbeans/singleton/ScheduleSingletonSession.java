@@ -19,9 +19,9 @@ public class ScheduleSingletonSession {
 		System.out.println("aCada5Segundos");
 	}
 	
-	@Schedule(second="30/10", minute="*",hour="*")
-	public void aCada5SegundosComecando30() {
-		System.out.println("aCada10SegundosComecando30");
+	@Schedule(second="30/25", minute="*",hour="*")
+	public void aCada5SegundosComecando25() {
+		System.out.println("aCada25SegundosComecando30");
 	}
 	
 	@Schedule(second="1,10",minute="*",hour="*")
