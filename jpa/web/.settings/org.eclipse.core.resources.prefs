@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/br/edu/cesufoz/ejb/jpa/service/CargoService.java=UTF-8
+encoding//src/br/edu/cesufoz/ejb/jpa/service/bmt/BMTService.java=UTF-8
+encoding//src/br/edu/cesufoz/ejb/jpa/service/bmt/BMTServiceRemote.java=UTF-8
+encoding//src/br/edu/cesufoz/ejb/jpa/service/cmt/CMTService.java=UTF-8
+encoding//src/br/edu/cesufoz/ejb/jpa/service/cmt/CMTServiceRemote.java=UTF-8
