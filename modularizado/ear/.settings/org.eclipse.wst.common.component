@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="aula-ejb.ear">
+    <wb-module deploy-name="ejb-modularizado.ear">
         <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
-        <dependent-module archiveName="aula-ejb.web.war" deploy-path="/" handle="module:/resource/aula-ejb.web/aula-ejb.web">
+        <dependent-module archiveName="ejb-modularizado.web.war" deploy-path="/" handle="module:/resource/ejb-modularizado.web/ejb-modularizado.web">
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="aula-ejb.ejb.jar" deploy-path="/" handle="module:/resource/aula-ejb.ejb/aula-ejb.ejb">
+        <dependent-module archiveName="ejb-modularizado.ejb.jar" deploy-path="/" handle="module:/resource/ejb-modularizado.ejb/ejb-modularizado.ejb">
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="aula-ejb.common.jar" deploy-path="/lib" handle="module:/resource/aula-ejb.common/aula-ejb.common">
+        <dependent-module archiveName="ejb-modularizado.common.jar" deploy-path="/lib" handle="module:/resource/ejb-modularizado.common/ejb-modularizado.common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
     </wb-module>
