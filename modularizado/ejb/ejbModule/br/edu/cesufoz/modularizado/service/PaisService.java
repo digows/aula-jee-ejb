@@ -8,7 +8,6 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 
 import br.edu.cesufoz.modularizado.entity.Pais;
-import br.edu.cesufoz.modularizado.service.PaisServiceRemote;
 
 /**
  * Session Bean implementation class PaisService
@@ -33,7 +32,7 @@ public class PaisService implements PaisServiceRemote {
 	
 	@Override
 	public List<Pais> listByFilters( String filter ) {
-		final TypedQuery<Pais> query = this.em.createNamedQuery("pais.listByFilters", Pais.class);
+		final TypedQuery<Pais> query = this.em.createNamedQuery(Pais.QUERY_LIST_BY_FILTERS, Pais.class);
 		query.setParameter("filter", filter);
 		return query.getResultList();
 	}

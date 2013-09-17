@@ -17,13 +17,18 @@ import javax.persistence.PreUpdate;
  */
 @Entity
 @NamedQueries({
-		@NamedQuery(name="pais.listByFilters", query="SELECT p FROM Pais p " +
-													  "WHERE LOWER(p.nome) LIKE '%' || LOWER(:filter) || '%' OR :filter = NULL")
+		@NamedQuery(
+			name = Pais.QUERY_LIST_BY_FILTERS, 
+			query = "SELECT p FROM Pais p " +
+				   "WHERE LOWER(p.nome) LIKE '%' || LOWER(:filter) || '%' OR :filter = NULL"
+		)
 	}
 )
 public class Pais implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+	
+	public static final String QUERY_LIST_BY_FILTERS = "pais.listByFilters";
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

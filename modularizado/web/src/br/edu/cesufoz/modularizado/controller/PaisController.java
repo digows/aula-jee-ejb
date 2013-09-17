@@ -1,4 +1,4 @@
-package br.edu.cesufoz.modularizado.managedbean;
+package br.edu.cesufoz.modularizado.controller;
 
 import java.util.List;
 
