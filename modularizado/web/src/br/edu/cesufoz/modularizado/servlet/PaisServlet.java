@@ -1,4 +1,4 @@
-package br.edu.cesufoz.aulaejb.servlet;
+package br.edu.cesufoz.modularizado.servlet;
 
 import java.io.IOException;
 
@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.edu.cesufoz.aulaejb.entity.Pais;
-import br.edu.cesufoz.aulaejb.service.PaisServiceRemote;
+import br.edu.cesufoz.modularizado.entity.Pais;
+import br.edu.cesufoz.modularizado.service.PaisServiceRemote;
 
 /**
  * Servlet implementation class PaisServlet

@@ -1,10 +1,10 @@
-package br.edu.cesufoz.aulaejb.service;
+package br.edu.cesufoz.modularizado.service;
 
 import java.util.List;
 
 import javax.ejb.Remote;
 
-import br.edu.cesufoz.aulaejb.entity.Pais;
+import br.edu.cesufoz.modularizado.entity.Pais;
 
 @Remote
 public interface PaisServiceRemote {

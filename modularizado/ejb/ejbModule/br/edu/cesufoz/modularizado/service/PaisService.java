@@ -1,4 +1,4 @@
-package br.edu.cesufoz.aulaejb.service;
+package br.edu.cesufoz.modularizado.service;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 
-import br.edu.cesufoz.aulaejb.entity.Pais;
-import br.edu.cesufoz.aulaejb.service.PaisServiceRemote;
+import br.edu.cesufoz.modularizado.entity.Pais;
+import br.edu.cesufoz.modularizado.service.PaisServiceRemote;
 
 /**
  * Session Bean implementation class PaisService

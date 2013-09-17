@@ -5,8 +5,8 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-import br.edu.cesufoz.aulaejb.entity.Pais;
-import br.edu.cesufoz.aulaejb.service.PaisServiceRemote;
+import br.edu.cesufoz.modularizado.entity.Pais;
+import br.edu.cesufoz.modularizado.service.PaisServiceRemote;
 
 public class Main {
 	public static void main(String[] args) throws NamingException {

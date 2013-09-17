@@ -1,4 +1,4 @@
-package br.edu.cesufoz.aulaejb.entity;
+package br.edu.cesufoz.modularizado.entity;
 
 import java.io.Serializable;
 import java.util.Calendar;
