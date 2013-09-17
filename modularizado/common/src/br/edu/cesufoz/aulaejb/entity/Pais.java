@@ -17,7 +17,8 @@ import javax.persistence.PreUpdate;
  */
 @Entity
 @NamedQueries({
-		@NamedQuery(name="pais.listByFilters", query="SELECT new Pais(p.id, p.nome) FROM Pais p WHERE LOWER(p.nome) LIKE '%' || LOWER(:filter) || '%' OR :filter = NULL ")
+		@NamedQuery(name="pais.listByFilters", query="SELECT p FROM Pais p " +
+													  "WHERE LOWER(p.nome) LIKE '%' || LOWER(:filter) || '%' OR :filter = NULL")
 	}
 )
 public class Pais implements Serializable {
