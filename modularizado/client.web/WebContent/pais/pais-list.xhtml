@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	
+	<f:metadata>
+  		<f:event type="preRenderView" listener="#{paisController.listByFilters(null)}"/>
+	</f:metadata>
+
+	<h:head>
+		<title>EJB Modularizado</title>
+	</h:head>
+	
+	<h:body>
+		<h3>PAIS - Listagem</h3>
+			<h:form>
+				<h:commandLink value="Inserir Pais" action="#{paisController.changeToInsert}"></h:commandLink>
+				
+				<h:dataTable value="#{paisController.paises}" var="pais">
+		   			<h:column>
+		   				<f:facet name="header">ID</f:facet>
+		   				#{pais.id}
+		   			</h:column>
+		   			<h:column>
+		   				<f:facet name="header">Nome</f:facet>
+		   				#{pais.nome}
+		   			</h:column>
+		   			<h:column>
+		   				<f:facet name="header">Data Criação</f:facet>
+		   				<h:outputText value="#{pais.dataCriacao.time}">
+	  						<f:convertDateTime type="date" pattern="dd-MM-yyyy"/>
+						</h:outputText>
+		   			</h:column>
+		   			<h:column>
+		   				<f:facet name="header">Data Atualização</f:facet>
+		   				<h:outputText value="#{pais.dataAlteracao.time}">
+	  						<f:convertDateTime type="date" pattern="dd-MM-yyyy"/>
+						</h:outputText>
+		   			</h:column>
+	   			</h:dataTable>
+			</h:form>
+	</h:body>
+</html>
