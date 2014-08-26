@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Quick EJB</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>Quick EJB</h1>
+	<h1>Ola Quick Project</h1>
+	<% System.out.println("ola do JSP"); %>
 </body>
 </html>

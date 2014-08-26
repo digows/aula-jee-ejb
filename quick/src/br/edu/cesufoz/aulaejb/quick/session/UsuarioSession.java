@@ -3,15 +3,16 @@ package br.edu.cesufoz.aulaejb.quick.session;
 import javax.ejb.Stateless;
 
 /**
- * Session Bean implementation class TimerSession
+ * 
  */
 @Stateless
 public class UsuarioSession implements 
 							UsuarioSessionRemote, 
 							UsuarioSessionLocal {
+	
     @Override
     public void salvar() {
-    	System.out.println("Usuario Salvo com sucesso.");
+    	System.out.println("Usuario Salvo com sucesso. :D ");
     }
 
 	@Override
@@ -26,6 +27,6 @@ public class UsuarioSession implements
 
 	@Override
 	public void relatorio() {
-		System.out.println("Relatorios de usuarios. -> ");
+		System.out.println("Relatorios de usuarios. :) -> ");
 	}
 }
