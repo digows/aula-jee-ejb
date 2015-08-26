@@ -21,7 +21,7 @@ public class CargoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	@EJB
-	private CargoServiceLocal jpaSampleLocal;
+	private CargoServiceLocal cargoService;
        
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -37,18 +37,18 @@ public class CargoServlet extends HttpServlet {
 			case "insert": {
 				final Cargo cargo = new Cargo();
 				cargo.setNome("Nome");
-				cargo.setDescricao("Desricao ");
+				cargo.setDescricao("Descricao ");
 				
-				jpaSampleLocal.save(cargo);
+				this.cargoService.save(cargo);
 			}
 			break;
 			case "remove": {
-				jpaSampleLocal.remove( Long.valueOf(cargoId) );
+				this.cargoService.remove( Long.valueOf(cargoId) );
 			}
 			break;
 		}
 		
-		final List<Cargo> cargos = this.jpaSampleLocal.list();
+		final List<Cargo> cargos = this.cargoService.list();
 		
 		for (Cargo c : cargos) {
 			response.getOutputStream().println( c.toString() );			

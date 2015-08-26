@@ -32,7 +32,10 @@ public class CargoService implements CargoServiceLocal {
 	 * 
 	 */
 	public void remove( long cargoId ) {
-		this.em.remove( em.find(Cargo.class, cargoId) );
+		final Cargo cargo = em.find(Cargo.class, cargoId); 
+		if ( cargo != null ) {
+			this.em.remove( cargo );
+		}
 	}
 	
 	/**
