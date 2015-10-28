@@ -9,7 +9,7 @@ import javax.persistence.PersistenceContext;
 import br.edu.aula.jee.jpa.entity.Cargo;
 
 /**
- * Session Bean implementation class CargoService
+ * Session Bean implementation class Bootstrap
  */
 @Stateless
 public class CargoService {
