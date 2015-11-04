@@ -23,6 +23,18 @@ public class CargoService {
 	/**
 	 * 
 	 */
+	public Cargo findById( Long cargoId ) {
+		return this.em.find(Cargo.class, cargoId);
+	}
+	
+	public Cargo insert( Cargo cargo ) {
+		this.em.persist(cargo);
+		return cargo;
+	}
+	
+	/**
+	 * 
+	 */
 	public Cargo save( Cargo cargo ) {
 		this.em.merge( cargo );
 		return cargo;
