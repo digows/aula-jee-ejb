@@ -37,7 +37,7 @@ public class Bootstrap {
 		}
 	}
 
-	@Schedule(second = "*/5", minute = "*", hour = "*", persistent = false)
+	//@Schedule(second = "*/5", minute = "*", hour = "*", persistent = false)
 	public void insereACada10Segundos() {
 		try {
 			final Connection connection = this.dataSource.getConnection();
